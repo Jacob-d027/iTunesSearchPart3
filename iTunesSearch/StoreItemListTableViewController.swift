@@ -35,7 +35,7 @@ class StoreItemListTableViewController: UITableViewController {
                 "term": searchTerm,
                 "media": mediaType,
                 "lang": "en_us",
-                "limit": "10"
+                "limit": "30"
             ]
             // use the item controller to fetch items
             Task {
@@ -77,7 +77,6 @@ class StoreItemListTableViewController: UITableViewController {
     }
     
     @IBAction func filterOptionUpdated(_ sender: UISegmentedControl) {
-        
         fetchMatchingItems()
     }
     
